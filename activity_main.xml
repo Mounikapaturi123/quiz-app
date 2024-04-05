@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="345dp"
+        android:layout_height="111dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="All questions"
+        android:textColor="#100D0D"
+        android:textFontWeight="1000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+        android:layout_marginTop="120dp"
+        android:text="This is our Question"
+        android:textColor="#ffff"
+        android:textFontWeight="1000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_a"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#EAF1F0"
+            android:text="Option A"
+            android:textColor="#0E0D0D"
+            android:textColorHighlight="@color/white"
+            android:textColorLink="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:cornerRadius="20dp"
+            app:rippleColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ans_b"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="#FAFBFB"
+            android:text="Option B"
+            android:textColor="#0B0909"
+            android:textColorHighlight="@color/material_dynamic_neutral20"
+            android:textColorLink="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/ans_c"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:background="#F1F8F7"
+            android:text="Option C"
+            android:textColor="#171515"
+            android:textColorHighlight="@color/material_dynamic_neutral20"
+            android:textColorLink="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:iconTint="@color/white" />
+
+        <Button
+            android:id="@+id/ans_d"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#E5EDED"
+            android:text="Option D"
+            android:textColor="#0E0D0D"
+            android:textColorHighlight="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choices_layout"
+        android:layout_marginTop="79dp"
+        android:background="#12CF1B"
+        android:backgroundTint="#19FE00"
+        android:outlineProvider="paddedBounds"
+        android:scrollbarThumbVertical="@android:color/white"
+        android:text="Submit"
+        android:textColor="#ffff"
+        android:textColorHighlight="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+</RelativeLayout>
